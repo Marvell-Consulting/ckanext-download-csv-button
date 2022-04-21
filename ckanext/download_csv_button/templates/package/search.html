@@ -1,0 +1,12 @@
+{% ckan_extends %}
+
+{% block page_primary_action %}
+{% if h.check_access('package_create') %}
+    <div class="page_primary_action">
+    {{ h.snippet ('snippets/add_dataset.html', dataset_type=dataset_type) }}
+
+    <a style="float:right" class="btn btn-primary" href="https://2gv8f9zmci.execute-api.eu-west-2.amazonaws.com/dev/get?env={{h.full_current_url() | replace('dataset','api/action&download=true')}}" title="{{ _('csv download') }}">CSV Download</a>
+    
+</div>
+{% endif %}
+{% endblock %}

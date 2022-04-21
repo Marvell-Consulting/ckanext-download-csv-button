@@ -1,0 +1,5 @@
+include README.rst
+include LICENSE
+include requirements.txt
+recursive-include ckanext/download_csv_button *.html *.json *.js *.less *.css *.mo *.yml
+recursive-include ckanext/download_csv_button/migration *.ini *.py *.mako

@@ -1,0 +1,14 @@
+# download_csv_button-js:
+#   filter: rjsmin
+#   output: ckanext-download_csv_button/%(version)s-download_csv_button.js
+#   contents:
+#     - js/download_csv_button.js
+#   extra:
+#     preload:
+#       - base/main
+
+# download_csv_button-css:
+#   filter: cssrewrite
+#   output: ckanext-download_csv_button/%(version)s-download_csv_button.css
+#   contents:
+#     - css/download_csv_button.css
